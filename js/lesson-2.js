@@ -88,6 +88,7 @@ function findSmallestNumber(numbers) {
         const minNumber = Math.min(...numbers);
         return minNumber;
     }
+    return 'Sory, it is not an array!';
 }
 console.log(findSmallestNumber(numbers));
 // Завдання 6
@@ -98,9 +99,9 @@ console.log(findSmallestNumber(numbers));
 // Скористайтесь цим прикладом виклику функції для перевірки її роботи:
 // console.log(findLongestWord("London is the capital of Great Britain")); // 'capital'
 function findLongestWord(string) {
-    const arrFromString = string.split(" ");
+    const words = string.split(" ");
     let longestWord = "";
-    for (const word of arrFromString) {
+    for (const word of words) {
          if (word.length > longestWord.length) {
             longestWord = word;
         }
