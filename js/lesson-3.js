@@ -153,3 +153,6 @@ multiply(value) {
     return this;
 }
 }
+const calc = new Calculator();
+const result = calc.number(10).add(5).substract(3).multiply(4).divide(2).getResult();
+console.log(result);
